@@ -67,6 +67,9 @@
     <Compile Include="Wyszukiwarka.Designer.cs">
       <DependentUpon>Wyszukiwarka.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Edytor.resx">
+      <DependentUpon>Edytor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +82,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Wyszukiwarka.resx">
+      <DependentUpon>Wyszukiwarka.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

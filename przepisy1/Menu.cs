@@ -14,5 +14,24 @@ namespace przepisy1
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Wyszukiwarka ss = new Wyszukiwarka();
+            ss.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Edytor ss = new Edytor();
+            ss.Show();
+        }
     }
 }
