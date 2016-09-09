@@ -14,5 +14,12 @@ namespace przepisy1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu ss = new Menu();
+            ss.Show();
+        }
     }
 }
