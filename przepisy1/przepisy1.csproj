@@ -83,6 +83,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>przepisyDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="przepisyDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>przepisyDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="przepisyDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>przepisyDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Wyszukiwarka.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +114,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Przegladarka.resx">
+      <DependentUpon>Przegladarka.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wyszukiwarka.resx">
       <DependentUpon>Wyszukiwarka.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +140,28 @@
     </None>
     <None Include="przepisyDataSet.xss">
       <DependentUpon>przepisyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="przepisyDataSet1.xsc">
+      <DependentUpon>przepisyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="przepisyDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>przepisyDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="przepisyDataSet1.xss">
+      <DependentUpon>przepisyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="przepisyDataSet2.xsc">
+      <DependentUpon>przepisyDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="przepisyDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>przepisyDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="przepisyDataSet2.xss">
+      <DependentUpon>przepisyDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
