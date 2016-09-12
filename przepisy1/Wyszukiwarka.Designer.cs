@@ -72,6 +72,8 @@
             this.nazwaToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.searchNameToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             idLabel = new System.Windows.Forms.Label();
             nazwaLabel = new System.Windows.Forms.Label();
             tagiLabel = new System.Windows.Forms.Label();
@@ -428,7 +430,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(571, 84);
+            this.button2.Location = new System.Drawing.Point(568, 67);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(214, 23);
             this.button2.TabIndex = 16;
@@ -436,11 +438,34 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(714, 146);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(109, 23);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Szukaj";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox1.ForeColor = System.Drawing.Color.Gray;
+            this.textBox1.Location = new System.Drawing.Point(555, 146);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(134, 18);
+            this.textBox1.TabIndex = 18;
+            this.textBox1.Text = "Wpisz szukaną frazę";
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            // 
             // Wyszukiwarka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(858, 350);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.przepisy1DataGridView);
             this.Controls.Add(this.searchNameToolStrip);
@@ -512,5 +537,7 @@
         private System.Windows.Forms.ToolStripTextBox nazwaToolStripTextBox;
         private System.Windows.Forms.ToolStripButton searchNameToolStripButton;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

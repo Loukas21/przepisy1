@@ -55,5 +55,23 @@ namespace przepisy1
             ss.Show();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.przepisy1TableAdapter.SearchName(this.przepisy1DataSet1.przepisy1, textBox1.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox1.ForeColor = Color.Black;
+        }
+
     }
 }
