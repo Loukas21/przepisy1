@@ -17,9 +17,7 @@ namespace przepisy1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Menu ss = new Menu();
-            ss.Show();
+
         }
 
         private void przepisy1BindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -48,6 +46,13 @@ namespace przepisy1
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu ss = new Menu();
+            ss.Show();
         }
 
     }

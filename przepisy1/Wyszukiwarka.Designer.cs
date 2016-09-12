@@ -71,6 +71,7 @@
             this.nazwaToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.nazwaToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.searchNameToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.button2 = new System.Windows.Forms.Button();
             idLabel = new System.Windows.Forms.Label();
             nazwaLabel = new System.Windows.Forms.Label();
             tagiLabel = new System.Windows.Forms.Label();
@@ -425,11 +426,22 @@
             this.searchNameToolStripButton.Text = "SearchName";
             this.searchNameToolStripButton.Click += new System.EventHandler(this.searchNameToolStripButton_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(571, 84);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(214, 23);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Powrót";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Wyszukiwarka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(858, 350);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.przepisy1DataGridView);
             this.Controls.Add(this.searchNameToolStrip);
             this.Controls.Add(idLabel);
@@ -499,5 +511,6 @@
         private System.Windows.Forms.ToolStripLabel nazwaToolStripLabel;
         private System.Windows.Forms.ToolStripTextBox nazwaToolStripTextBox;
         private System.Windows.Forms.ToolStripButton searchNameToolStripButton;
+        private System.Windows.Forms.Button button2;
     }
 }
