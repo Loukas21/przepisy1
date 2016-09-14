@@ -21,5 +21,20 @@ namespace przepisy1
             Menu ss = new Menu();
             ss.Show();
         }
+
+        private void przepisyBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.przepisyBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.przepisyDataSet1);
+
+        }
+
+        private void Wyszukiwarka_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'przepisyDataSet1.przepisy' table. You can move, or remove it, as needed.
+            this.przepisyTableAdapter.Fill(this.przepisyDataSet1.przepisy);
+
+        }
     }
 }
