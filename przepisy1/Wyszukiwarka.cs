@@ -36,5 +36,10 @@ namespace przepisy1
             this.przepisyTableAdapter.Fill(this.przepisyDataSet1.przepisy);
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
